@@ -65,10 +65,10 @@ public class Main {
             dataPoints[i] = rnd.nextInt(100) + 1;
         }
 
-        // Task 5
+        //Task 5
         int searchValue2 = SafeInput.getRangedInt(in, "Enter a value between 1 and 100", 1, 100);
 
-        // Task 6
+        //Task 6
         int count = 0;
         for (int i = 0; i < dataPoints.length; i++) {
             if (dataPoints[i] == searchValue2) {
@@ -77,7 +77,7 @@ public class Main {
         }
         System.out.println("The value " + searchValue2 + " was found " + count + " time(s) in the array.");
 
-        // Task 7: Find the first occurrence of the value
+        //Task 7
         boolean found2 = false;
         for (int i = 0; i < dataPoints.length; i++) {
             if (dataPoints[i] == searchValue) {
@@ -89,7 +89,7 @@ public class Main {
         if (!found2) {
             System.out.println("The value " + searchValue2 + " was not found in the array.");
         }
-        // Task 8
+        //Task 8
         int minValue2 = dataPoints[0];
         int maxValue2 = dataPoints[0];
         for (int i = 1; i < dataPoints.length; i++) {
